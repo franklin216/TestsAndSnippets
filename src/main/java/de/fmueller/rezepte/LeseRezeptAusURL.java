@@ -1,4 +1,4 @@
-package de.frank;
+package de.fmueller.rezepte;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * @author Thomas.Darimont
+ * @author Frank Mueller
  *
  */
 public class LeseRezeptAusURL {
@@ -45,10 +45,13 @@ public class LeseRezeptAusURL {
 
         //        Chinapfanne mit Sprossen
         //        "http://www.oekokiste.de/rezept/show/detail/rezeptid/8.html";
-        //        Die Hühnerbrustfilets in feine Streifen schneiden. Die Sojasauce darübergießen. Das Chinagewürz mit dem Backpulver mischen, über das Fleisch streuen und alles gut mischen. Mit frischem Pfeffer aus der Mühle bestreuen, nochmals mischen und zugedeckt etwa 2 bis 4 Stunden durchziehen lassen. Inzwischen die Zwiebel abziehen und in feine Streifen schneiden. Die Bohnen und die Zuckerschoten putzen, waschen und in etwa 3 cm lange Stücke schneiden. Die Egerlinge abreiben und blättrig schneiden. Den gewaschenen, gut abgetropften Radiccio in feine Streifen schneiden. Die Alfalfa Sprossen ebenfalls gut abtropfen lassen. Das Öl in einem Wok erhitzen, aber nicht zu heiß werden lassen. Das marinierte Fleisch hineingeben und etwa 1 ½ Min. darin unter ständigem Rühren anbraten, dann an den Rand schieben. Nun nach und nach in Abständen von knapp ½ Min. zunächst die Zwiebeln mit dem Ingwer, die Bohnen und Zuckerschoten sowie die Egerlinge in den Wok geben, dabei das Gemüse ständig im Wok bewegen. Zum Schluss das Gemüse mit dem Fleisch mischen, den Fond angießen und abschmecken. Evtl. mit Sojasauce und Chinagewürz nachwürzen. Nun den Radiccio und die Sprossen unterheben und sofort servieren. Dazu Reis oder einfach nur Baguette essen.  
+        //        Die Hühnerbrustfilets in feine Streifen schneiden. Die Sojasauce darübergießen. Das Chinagewürz mit dem Backpulver mischen, über das Fleisch streuen und alles gut mischen. Mit frischem Pfeffer aus der Mühle bestreuen, nochmals mischen und zugedeckt etwa 2 bis 4 Stunden durchziehen lassen. Inzwischen die Zwiebel abziehen und in feine Streifen schneiden. Die Bohnen und die Zuckerschoten putzen, waschen und in etwa 3 cm lange Stücke schneiden. Die Egerlinge abreiben und blättrig schneiden. Den gewaschenen, gut abgetropften Radiccio in feine Streifen schneiden. Die Alfalfa Sprossen ebenfalls gut abtropfen lassen. Das Öl in einem Wok erhitzen, aber nicht zu heiß werden lassen. Das marinierte Fleisch hineingeben und etwa 1 ½ Min. darin unter ständigem Rühren anbraten, dann an den Rand schieben. Nun nach und nach in Abständen von knapp ½ Min. zunächst die Zwiebeln mit dem Ingwer, die Bohnen und Zuckerschoten sowie die Egerlinge in den Wok geben, dabei das Gemüse ständig im Wok bewegen. Zum Schluss das Gemüse mit dem Fleisch mischen, den Fond angießen und abschmecken. Evtl. mit Sojasauce und Chinagewürz nachwürzen. Nun den Radiccio und die Sprossen unterheben und sofort servieren. Dazu Reis oder einfach nur Baguette essen.  
         //        3 bis 4 Hühnerbrustfilets, 6 EL Sojasauce, 1-2 TL Chinagewürz, 1 TL Backpulver, Pfeffer aus der Mühle, 1 Zwiebel, 2 TL feine, frische Ingwerwürfel, 100 g zarte Bohnen, 100 g Zuckerschoten, 12 kleine Egerlinge, ¼ Kopf Radiccio, 1-2 Tassen frische, gut abgespülte Alfalfa Sprossen, 4 bis 6 EL Öl, 1/8 l Geflügelfond
 
         //TODO Laden, dann in Textdatei speichern. beim nächsten Starten schauen, ob diese Datei schon gefüllt ist. Und dann von dort laden
+        // Ein verzeichnis erstellen, mit einem grossen JSON drin. bsp. arraylist von rezepte.(zutaten, zubereitung, ursprungsurl) 
+        //wenn ursprungsurl schon in der Datei vorhanden, dann mache erst mal nix, nur wenn ein Flag always update gesetzt ist. 
+        //Bei oekokiste, eine for-schleife 0-400 (schauen, was die groesste rezeptid ist)
 
         //        String bla ="http://www.tutorials.de";
         StringBuilder sb = new StringBuilder();
